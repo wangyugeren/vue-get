@@ -13,6 +13,7 @@ import Book from '@/components/Book'
 import Shop from '@/components/Shop'
 import More from '@/components/More'
 import All from '@/components/All'
+import Search from '@/components/Search'
 
 Vue.use(Router)
 Vue.use(VueResource)
@@ -69,6 +70,11 @@ export default new Router({
       path: '/all',
       name: 'all',
       component: All
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: Search
     }
   ]
 })

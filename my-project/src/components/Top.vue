@@ -1,7 +1,11 @@
 <template>
 	<div>
-		<div id="ohead" class="clearfix" v-for="item in contents" v-if="$route.path==item.path">
-			<div class="headsearch"></div>
+		<div id="ohead" class="clearfix" 
+			v-for="item in contents" 
+			v-if="$route.path==item.path">
+			<router-link to="/search">
+				<div class="headsearch"></div>
+			</router-link>
 			<strong>{{ item.otext }}</strong>
 			<span class="setting">{{ item.ttext }}</span>
 		</div>
