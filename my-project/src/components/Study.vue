@@ -1,0 +1,268 @@
+<template>
+	<div>
+		<top></top>
+		<div id="listen-head">
+			<span class="pimage pimage1"></span>
+		</div>
+		<div id="boxliner">
+			<span class="liner"></span>
+		</div>
+		<div class="hello">
+			<div class="one">毛毛宇同学，你好</div>
+			<div class="two"><span class="pimage pimage2"></span></div>
+		</div>
+		<div id="pbox"></div>
+		<div class="msg clearfix">
+			<span class="pimage pimage3"></span>
+			<div class="msgtext">
+				<p>预告：51分钟后上线</p>
+				<p>万维钢·精英日课 特别放送|向十万读者致敬</p>
+			</div>
+		</div>
+		<div id="bigbox">
+		<div id="migbox">
+			<div id="sigbox">
+				<p class="sigbox-p1">
+					<span>学习进度·今天</span>
+					<span>0/6篇</span>
+				</p>
+				<div class="box1"></div>
+
+				<!-- 下面的模块一致，内容不同 -->
+				<p class="timebox">06:30</p>
+				<div class="mainbox">
+					<p class="headtext">
+						<img src="../assets/img/d7.png" alt="罗辑">
+						<span class="mainbox-text">罗辑思维</span>
+						<span class="mainbox-into">进入专栏</span>
+					</p>
+					<div class="linebox"></div>
+					<div class="maintext">
+						<p>[长子继承制]</p>
+						<p>欧洲工业革命的成功，一个重要因素就是长子继承制。而中国的继承制度看似公平，却阻碍了近代化发展</p>
+					</div>
+				</div>
+				<p class="timebox">08:30</p>
+				<div class="mainbox">
+					<p class="headtext">
+						<img src="../assets/img/d7.png" alt="罗辑">
+						<span class="mainbox-text">罗辑思维</span>
+						<span class="mainbox-into">进入专栏</span>
+					</p>
+					<div class="linebox"></div>
+					<div class="maintext">
+						<p>[长子继承制]</p>
+						<p>欧洲工业革命的成功，一个重要因素就是长子继承制。而中国的继承制度看似公平，却阻碍了近代化发展</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<footer-bar></footer-bar>
+	</div>
+</template>
+<script>
+	import Top from './Top'
+	export default{
+		name:'study',
+		components:{
+        'top':Top,
+      },
+	}
+</script>
+<style scoped>
+	@import "../assets/css/base.css";
+		#listen-head{
+			margin-top: 50px;
+			width: 100%;
+			height: 70px;
+			border-top: 1px solid #acacac;
+		}
+		.pimage{
+			display: inline-block;
+			background:url(../assets/img/f_img.png) no-repeat;
+			background-size: 500px 75px;
+		}
+		.pimage1{
+			width: 55px;
+			height: 55px;
+			background-position: 1px 1px;
+			margin: 10px;
+		}
+		.pimage2{
+			width: 26px;
+			height: 26px;
+			background-position: -284px 1px;
+		}
+		.hello{
+			font-size: 20px;
+			font-weight: bolder;
+			height: 55px;
+			line-height: 55px;
+			margin:0 10px;
+		}
+		.hello .one{
+			width: 85%;
+			display: inline-block;
+		}
+		.hello .two{
+			display: inline-block;
+			width: 10%;
+		}
+		.liner{
+			display: inline-block;
+			width: 92%;
+			height: 1px;
+			border-top:1px solid #e6e6e6;
+		}
+		#boxliner{
+			text-align: center;
+		}
+		#pbox{
+			width: 100%;
+			height: 10px;
+			background-color: #eff3f2;
+		}
+		.pimage3{
+			float: left;
+			display: inline-block;
+			width: 31px;
+			height: 31px;
+			background-position: -61px -42px;
+			margin: 15px 10px 0 10px;
+		}
+		.msg{
+			height: 60px;
+		}
+		.msgtext{
+			float: left;
+			font-size: 12px;
+			display: inline-block;
+			margin-top: 15px;
+		}
+		.msgtext p:nth-child(1){
+			color: #6c6c6c;
+		}
+		.msgtext p:nth-child(2){
+			color: #323232;
+			font-weight: bolder;
+		}
+		#bigbox{
+			background-color: #eff3f2;
+			padding:24px 0 24px 24px;
+		}
+		#migbox{
+			border-left: 2px solid #dbdfde;
+			
+		}
+		#sigbox{
+			padding-left: 24px;
+			width: 83%;
+		}
+		#sigbox .sigbox-p1{
+			font-size: 13px;
+			color: #5f5f5f;
+			font-weight: bold;
+			position: relative;
+		}
+		#sigbox .sigbox-p1 span{
+			display: inline-block;
+		}
+		#sigbox .sigbox-p1 span:nth-child(1){
+			width: 85%;
+		}
+		#sigbox .sigbox-p1 span:nth-child(1):before{
+			content: "";
+			display: inline-block;
+			width: 31px;
+			height: 31px;
+			background: url(../assets/img/f_img.png) no-repeat;
+			background-position: -62px 0;
+			background-size: 500px 75px;
+			position: absolute;
+			top:-6px;
+			left: -41px;
+		}
+		.box1{
+			width: 100%;
+			height: 5px;
+			background-color: #e5e5e5;
+			border-radius: 2px;
+		}
+		#sigbox .timebox{
+			color: #898989;
+			font-size: 10px;
+			margin-top: 20px;
+			margin-bottom: 14px;
+			position: relative;
+		}
+		#sigbox .timebox:before{
+			content: "";
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background: url(../assets/img/f_img.png) no-repeat;
+			background-position: -40px -57px;
+			background-size: 500px 75px;
+			position: absolute;
+			left: -34px;
+		}
+		.mainbox{
+			width: 100%;
+			background-color: #fff;
+		}
+		.mainbox .headtext{
+			height: 50px;
+		}
+		.mainbox img{
+			width: 31px;
+			height: 31px; 
+			display: inline-block;
+			margin:10px 8px 0 10px;
+			float: left;
+		}
+		.mainbox-text{
+			font-size: 13px;
+			color: #303030;
+			display: inline-block;
+			font-weight: bold;
+			float: left;
+			width: 55%;
+			margin-top: 16px;
+		}
+		.mainbox-into{
+			float: right;
+			width: 25%;
+			margin-top: 16px;
+			color: #c1c1c1;
+		}
+		.mainbox-into:after{
+			content:"";
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background: url(../assets/img/f_img.png) no-repeat;
+			background-size: 500px 75px;
+			background-position: -422px -36px;
+			margin-left: 4px;
+		}
+		.mainbox .linebox{
+			width: 86%;
+			height: 2px;
+			border-top: 1px solid #c5c5c5;
+			margin-left: 7%;
+		}
+		.maintext{
+			width: 92%;
+			margin: 4%;
+		}
+		.maintext p:nth-child(1){
+			font-size: 15px;
+			color: #373737;
+			font-weight: bold;
+		}
+		.maintext p:nth-child(2){
+			font-size: 12px;
+			color: #676767;
+		}
+</style>

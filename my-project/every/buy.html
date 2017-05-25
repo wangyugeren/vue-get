@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>已购</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/base.css">
+	<style>
+		#ohead{
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 50px;
+			width: 100%;
+			font-size: 16px;
+			text-align: center;
+			line-height: 50px;
+			background-color: #fff;
+		}
+		#ohead .headsearch{
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			width: 25px;
+			height: 25px;
+			background: url(./img/f_img.png) no-repeat;
+			background-size: 500px 75px;
+			background-position: -426px -52px;
+		}
+		#ohead .setting{
+			position: absolute;
+			right: 14px;
+			color: #9b9b9b;
+			font-size: 15px;
+		}
+		.navlist{
+			width: 100%;
+			height: 40px;
+			border-top: 1px solid #e1e1e1;
+			border-bottom: 1px solid #e1e1e1;
+			margin-top: 50px;
+		}
+		.navlist span{
+			display: inline-block;
+		}
+		.pimage{
+			background: url(./img/f_img.png) no-repeat;
+			background-size: 500px 75px;
+			float:left;
+		}
+		.pimage1{
+			width: 17px;
+			height: 17px;
+			background-position: -262px -3px;
+			margin: 11px 23px 0 15px;
+		}
+		.pimage2{
+			width: 17px;
+			height: 17px;
+			background-position: -241px -3px;
+			margin-top: 11px;
+		}
+		.contents:after,.allread:after{
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 10px;
+			background: url(./img/f_img.png) no-repeat;
+			background-size: 500px 75px;
+			background-position: -451px -34px;
+			margin-left: 5px;
+
+		}
+		.contents,.allread{
+			font-size: 14px;
+			color: #626262;
+			float: right;
+			margin: 11px 12px 0 5px;
+		}
+		.booklist div{
+			display: inline-block;
+			width: 33%;
+			height: 180px;
+			float: left;
+			text-align: center;
+			margin-top: 15px;
+		}
+		.booklist div img{
+			width: 90px;
+			height: 120px;
+			display: inline-block;
+		}
+		.booklist div p{
+			width: 90px;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div id="ohead" class="clearfix">
+		<div class="headsearch"></div>
+		<strong>已购</strong>
+		<span class="setting">编辑</span>
+	</div>
+	<div class="navlist clearfix">
+		<span class="pimage pimage1"></span>
+		<span class="pimage pimage2"></span>
+		<span class="allread">全部阅读</span>
+		<span class="contents">最近内容</span>
+	</div>
+	<div class="booklist clearfix">
+		<div class="list1">
+			<img src="./img/d9.jpg" alt="">
+			<p>《博恩·崔西的时间管理课》</p>
+		</div>
+		<div class="list2">
+			<img src="./img/d8.jpg" alt="">
+			<p>四步提升职场情商</p>
+		</div>
+	</div>
+</body>
+</html>
