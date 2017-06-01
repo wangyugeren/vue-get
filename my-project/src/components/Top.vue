@@ -55,8 +55,8 @@
 		}
 		#ohead .headsearch{
 			position: absolute;
-			top: 20px;
-			left: 20px;
+			top: 15px;
+			left: 15px;
 			width: 25px;
 			height: 25px;
 			background: url(../assets/img/f_img.png) no-repeat;

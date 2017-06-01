@@ -63,7 +63,6 @@
       height: 20px;
       background:url(../assets/img/f_img.png) no-repeat;
       background-size: 500px 75px;
-      margin:4px 0 0px 0px;
     }
     .ofootlist1{
       background-position: -286px -54px;

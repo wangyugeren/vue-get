@@ -9,8 +9,8 @@
 	  <div class="mlist">
 	  		<ul>
 	  			<li v-for="(item,index) in foList"
-	  				@click="showcolor(index)"
-	  				v-bind:class="{active:index==tabIndex}"
+              v-bind:class="{active:index===tabIndex}"
+              v-on:click="showcolor(index)"
 	  				class="lievery">
 	  				{{item.text}}
 	  			</li>
@@ -28,10 +28,10 @@
 </template>
 <script>
 	export default{
-		name:'search',
+		name:'searchtwo',
 		data(){
 			return{
-				tabIndex:0,
+        tabIndex:0,
 				text:'',
 				todolist:["李翔","知识发布会","刘德华","罗永浩","谷歌","习近平","李克强"],
 				bool:'false',

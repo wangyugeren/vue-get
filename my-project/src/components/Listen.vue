@@ -6,21 +6,14 @@
 		<p>你想听多久，选择时间让得到为你服务</p>
 	</div>
 	<div class="choose-time">
-		<div class="time1">
-			<span class="num">30</span>
-			<span class="minuter">分钟</span>
+		<div class="time1" v-for="(item,index) in timelist">
+		<router-link v-bind:to="'/listenlist'+(index+1)">
+			<span class="num">{{item.timenum}}</span>
+			<span class="minuter">{{item.timetext}}</span>
 			<span class="pimage pimage1"></span>
+		</router-link>
 		</div>
-		<div class="time1">
-			<span class="num">60</span>
-			<span class="minuter">分钟</span>
-			<span class="pimage pimage1"></span>
-		</div>
-		<div class="time1">
-			<span class="num">2</span>
-			<span class="minuter">小时</span>
-			<span class="pimage pimage1"></span>
-		</div>
+		
 	</div>
 	<footer-bar></footer-bar>
 	</div>
@@ -31,7 +24,28 @@
 		name:'listen',
 		components:{
         'top':Top,
-      },
+        },
+        data(){
+        	return{
+        		timelist:[{
+        			timenum:'30',
+        			timetext:'分钟',
+        		},
+        		{
+        			timenum:'60',
+        			timetext:'分钟',
+        		},
+        		{
+        			timenum:'2',
+        			timetext:'小时',
+        		},
+        		{
+        			timenum:'∞',
+        			timetext:'一直听',
+        		}],
+        		
+        	}
+        }
 	}
 </script>
 <style scoped>
@@ -68,6 +82,8 @@
 		.time1 .minuter{
 			font-size: 13px;
 			color: #999999;
+			display: inline-block;
+			width: 40px;
 		}
 		.pimage{
 			background: url(../assets/img/f_img.png) no-repeat;
@@ -78,6 +94,6 @@
 			width: 10px;
 			height: 10px;
 			background-position: -420px -36px;
-		    margin-left: 70%;
+		    margin-left: 60%;
 		}
 </style>

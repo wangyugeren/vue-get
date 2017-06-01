@@ -14,6 +14,12 @@ import Shop from '@/components/Shop'
 import More from '@/components/More'
 import All from '@/components/All'
 import Search from '@/components/Search'
+import SearchTwo from '@/components/SearchTwo'
+import Userlist1 from '@/components/Userlist1'
+import Userlist2 from '@/components/Userlist2'
+import Userlist3 from '@/components/Userlist3'
+import Userlist7 from '@/components/Userlist7'
+// import Loading from '@/components/Loading'
 
 Vue.use(Router)
 Vue.use(VueResource)
@@ -75,6 +81,31 @@ export default new Router({
       path: '/search',
       name: 'search',
       component: Search
+    },
+    {
+      path: '/userlist1',
+      name: 'userlist1',
+      component: Userlist1
+    },
+    {
+      path: '/userlist2',
+      name: 'userlist2',
+      component: Userlist2
+    },
+    {
+      path: '/userlist3',
+      name: 'userlist3',
+      component: Userlist3
+    },
+    {
+      path: '/userlist7',
+      name: 'userlist7',
+      component: Userlist7
+    },
+    {
+      path: '/searchtwo',
+      name: 'searchtwo',
+      component: SearchTwo
     }
   ]
 })

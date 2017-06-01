@@ -45,7 +45,8 @@
     <div class="boxmin">
     </div>
     <div class="title">
-      <span class="free">知识新闻 |免费</span><span class="all">查看全部</span>
+      <span class="free">知识新闻 |免费</span>
+      <router-link to='./searchtwo'><span class="all">查看全部</span></router-link>
     </div>
     <!-- 下面是重复的列表 -->
     <div class="lists clearfix">
